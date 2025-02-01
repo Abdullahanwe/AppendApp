@@ -5,7 +5,7 @@ import './App.css'
 import About from './Components/About/About'
 import Home from './Components/Home/Home'
 import Services from './Components/Services/Services'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 import Portfolio from './Components/Portfolio/Portfolio'
 import Team from './Components/Team/Team'
@@ -14,7 +14,7 @@ import Contact from './Components/Contact/Contact'
 import NotFound from './Components/NotFound/NotFound'
 import Price from './Components/Price/Price'
 
-let router =createBrowserRouter([
+let router =createHashRouter([
   {path:'',element:<Layout/>, children:[
     {index:true ,element:<Home/>},
     {path:'about' ,element:<About/>},
