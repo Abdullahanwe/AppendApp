@@ -1,0 +1,155 @@
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+
+@layer utilities{
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 35%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        right: 35%;
+    }
+
+@media  (max-width:640px)  {
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 20px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 10%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 20px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        right: 10%;
+    }
+}
+@media  (min-width:643px) and (max-width:1020px) {
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 20%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: rgb(232, 69, 69);
+        position: absolute;
+        bottom: 10px;
+        right: 20%;
+    }
+
+}
+.team-img{
+    border-radius: 50%;
+}
+.lear-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.parent-team:hover .lear-img{
+    opacity: 1;
+}
+.icon-team{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 30px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    opacity: 0;
+    cursor: pointer;
+   
+}
+
+.parent-team:hover .icon-team {
+    bottom: 0;
+opacity: 1;
+}
+.icon-team svg{
+    transition: all 0.5s ease;
+}
+.icon-team svg:hover{
+    color: #e84545;
+}
+
+.font-p-team{
+    font-style: italic;
+    color: #4d5154;
+    line-height: 2em;
+}
+.btn{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    border: 1px solid #adaeb0;
+    padding-block: 5px;
+    padding-inline: 30px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    background-color: #e84545;
+    color: white;
+    border: 1px solid #e84545;
+}
+.bg-sec2-team{
+    background-image: url(../../img/cta-bg.jpg);
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment:fixed ;
+}
+
+}

@@ -1,0 +1,38 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-inline: 20px;
+    padding-block: 8px;
+    text-transform: capitalize;
+    z-index: 50;
+    color: white;
+}
+
+
+nav.stic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-inline: 20px;
+    padding-block: 8px;
+    text-transform: capitalize;
+    z-index: 50;
+    /* background-color: white !important; */
+    /* color: black !important; */
+}
+
+ul li{
+    transition: all 0.7s ease;
+}
+ul li:hover{
+    color: #e84545;
+}

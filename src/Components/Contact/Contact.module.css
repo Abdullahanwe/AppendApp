@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer utilities{
+
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 35%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        right: 35%;
+    }
+
+@media  (max-width:640px)  {
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 20px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 10%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 20px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        right: 10%;
+    }
+}
+@media  (min-width:643px) and (max-width:1020px) {
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 20%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        right: 20%;
+    }
+}
+
+
+.bg-form{
+    background-color:#f6f6f7 ;
+    padding: 30px;
+}
+
+.bg-cont-contact{
+    background-color: #f6f6f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+.icon-contact{
+    color: #e84545;
+    font-size: 38px;
+    font-weight: 600;
+}
+.btn{
+    font-family: sans-serif;
+    font-size: 17px;
+    color: white;
+    background-color: #e84545;
+    border: 1px solid ;
+    padding-block: 10px;
+    padding-inline: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+}

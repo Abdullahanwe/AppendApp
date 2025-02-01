@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+.bg-about{
+    background: #f8efef;
+}
+.text-color{
+    color: #e8455b;
+}
+.bg-section{
+    background: #f9f9f9;
+}
+.buttom-read{
+    background: #e84545;
+    color: white;
+    padding: 12px 24px;
+}
+span svg{
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+.buttom-read:hover svg {
+    padding-left: 5px;
+    font-size: 20px;
+}
+.icon-box{
+    padding: 50px;
+    box-shadow: 5px 10px 20px ;
+    border-radius: 10px;
+}
+.icon-box svg{
+    font-size: 50px;
+    padding: 10px;
+    color: #e84545;
+    background-color: #f8efef;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.icon-box:hover svg{
+    background-color: #e84545;
+    color: white;
+}
+.icon-box p{
+    font-size: 16px;
+    font-family: "Open Sans", system-ui;
+}
+
+.bg-section2{
+    height: 300px;
+    width: 100%;
+    background-image: url(../../img/sec2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba( 0 , 0 , 0 , 0.6);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width: 640px) { 
+    .mt-sm{
+       margin-top: 60px; 
+       margin-bottom: 60px;
+    }
+ }
+}

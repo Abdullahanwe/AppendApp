@@ -1,0 +1,39 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+
+@layer utilities{
+
+
+.bg-foot{
+    background-color:#f9f9f9 ;
+}
+
+.bg-sub-foot{
+    background-color:#eeeeee ;
+}
+
+
+.icon-foot span{
+    border: 1px solid #8d8f91;
+    color: #8d8f91;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+.icon-foot span:hover{
+    border: 1px solid #e84545;
+    color: #e84545;
+    cursor: pointer;
+}
+.style-p-foot{
+    line-height: 1.8rem;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+.style-p-foot p:hover{
+    color: #e84545;
+    cursor: pointer;
+}
+}

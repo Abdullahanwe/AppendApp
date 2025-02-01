@@ -1,0 +1,113 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+@layer utilities{
+
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 35%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        right: 35%;
+    }
+
+@media  (max-width:640px)  {
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 20px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 10%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 20px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        right: 10%;
+    }
+}
+@media  (min-width:643px) and (max-width:1020px) {
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 20%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: rgb(232, 69, 69);
+        position: absolute;
+        bottom: 10px;
+        right: 20%;
+    }
+
+}
+
+.testimonial-container {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .testimonial-slide {
+    background: #f8fbff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .custom-dots {
+    display: flex !important;
+    justify-content: center;
+    position: absolute !important;
+    bottom: 10px; /* ✅ يجعل النقاط داخل الشريحة */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0;
+    margin: 0;
+  }
+  .styl-p-card{
+    font-size: 17px;
+    color: black;
+  }
+
+}

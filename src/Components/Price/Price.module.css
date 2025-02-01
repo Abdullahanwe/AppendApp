@@ -1,0 +1,152 @@
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+
+@layer utilities{
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 35%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        right: 35%;
+    }
+
+@media  (max-width:640px)  {
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 20px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 10%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 20px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        right: 10%;
+    }
+}
+@media  (min-width:643px) and (max-width:1020px) {
+    .title-services{
+        position: relative;
+    }
+    .title-services::after{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: #e84545;
+        position: absolute;
+        bottom: 10px;
+        left: 20%;
+    }
+    .title-services::before{
+        content: ' ';
+        width: 50px;
+        height: 3px;
+        background-color: rgb(232, 69, 69);
+        position: absolute;
+        bottom: 10px;
+        right: 20%;
+    }
+}
+
+.svg-box{
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    
+}
+.parent-svg{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    margin-block: 20px;
+
+
+}
+.parent-svg::before{
+    content: ' ';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: rgba(232, 69, 69);
+    border: 10px solid #f8cbcb;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9;
+    
+}
+.parent-svg::after{
+    content: ' ';
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background-color: rgba(242, 224, 224, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    
+}
+
+
+.parent-card p span{
+    color: #e84545;
+    font-weight:bolder;
+    font-size: 40px;
+}
+.color-mont{
+    color: #adaeb0;
+}
+.btn{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4d5154;
+    border: 1px solid #adaeb0;
+    padding-block: 5px;
+    padding-inline: 30px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    background-color: #e84545;
+    color: white;
+}
+
+.pric-item{
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.pric-item:active{
+    color: #e84545;
+    cursor: pointer;
+}
+}
