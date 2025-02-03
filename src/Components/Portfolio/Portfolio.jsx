@@ -53,22 +53,22 @@ const Portfolio = () => {
                     <p className='text-gray-500 p-5'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
                 </div>
                 <div className={`${Style['sm']} md:flex md:p-4`}>
-                    <div className=" ">
+                    <div className=" " data-aos="fade-right">
                         <h3 className='text-2xl p-2 font-bold'>Corporis temporibus maiores provident</h3>
                         <p className='text-gray-600 p-2'>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         <button className={`${Style['btn']}`}>Get Started</button>
                     </div>
-                    <div className={`${Style['static-img']} grid sm:grid-cols-1 sm:grid-rows-1 `}  >
+                    <div className={`${Style['static-img']} grid sm:grid-cols-1 sm:grid-rows-1 `}  data-aos="fade-left">
                         <img src={img1} alt="img1" className={`${Style['static-back']} `} />
                         <img src={img2} alt="img2" className={`${Style['static-front']}`} />
                     </div>
                 </div>
             </div>
             <div className={`${Style['sm2']} container mx-auto mt-20 mb-14 flex gap-6`}>
-                <div className={`${Style['static-im']} grid sm:grid-cols-1 sm:grid-rows-1 p-4 `}>
+                <div className={`${Style['static-im']} grid sm:grid-cols-1 sm:grid-rows-1 p-4 `} data-aos="fade-right">
                     <img src={img3} alt="img1" className={`${Style['img3']} `} />
                 </div>
-                <div className={`${Style['sm']} md:flex md:p-4`}>
+                <div className={`${Style['sm']} md:flex md:p-4`} data-aos="fade-left">
                     <div className=" ">
                         <h3 className='text-2xl p-2 font-bold'>Sunt consequatur ad ut est nulla</h3>
                         <p className='text-gray-600 p-2'>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
@@ -116,7 +116,7 @@ const Portfolio = () => {
                             return false;
                         })
                         .map((item) => (
-                            <div key={item.id} className={`bg-white  shadow-lg break-inside-avoid mb-4 relative rounded-lg ${Style['card-proto']} overflow-hidden`}
+                            <div key={item.id} className={`bg-white  shadow-lg break-inside-avoid mb-4 relative rounded-lg ${Style['card-proto']} overflow-hidden`  } data-aos="fade-up"
 
                                 
                             >

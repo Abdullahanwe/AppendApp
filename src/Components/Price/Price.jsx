@@ -14,9 +14,9 @@ const FAQItem = ({ qustion, answr ,count}) => {
                 <div className='  '>
                     <button
                         onClick={() => setIsExpanded(!isExpanded)}
-                        className={`ml-2 p-1 w-full flex justify-between items-center content-start ${ !isExpanded? " ": "text-red-700"} `}
+                        className={`p-1 w-full flex justify-between items-center content-start ${ !isExpanded? " ": "text-red-700"} `}
                     >
-                    <p className={`${Style['pric-item']}`}> <span>{count}</span> {qustion}</p>
+                    <p className={`${Style['pric-item']} `}> <span>{count}</span> {qustion}</p>
                         {isExpanded ? <FaChevronDown /> : <FaChevronRight />}
                     </button>
                 </div>
@@ -71,7 +71,7 @@ const Price = () => {
                     <p className='text-gray-500 p-5'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
                 </div>
                 <div className={`container mx-auto grid md:grid-cols-3 sm:grid-cols-1 text-center pt-24 pb-24 ps-16 pe-16 ${Style['parent-card']}`}>
-                    <div className='p-2'>
+                    <div className='p-2' data-aos="fade-right">
                         <div className='shadow-lg rounded-xl py-10 px-4 space-y-3 '>
                             <div className='flex flex-col items-center'>
                                 <h3 className='text-2xl font-bold'>Free Plan</h3>
@@ -92,7 +92,7 @@ const Price = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='p-3 scale-110 z-10 ' >
+                    <div className='p-3 scale-110 z-10 ' data-aos="fade-up">
                         <div className='shadow-lg rounded-xl py-10  px-4 space-y-3  border-red-700 border-2'>
                             <div className='flex flex-col items-center'>
                                 <h3 className='text-2xl font-bold'>Business Plan</h3>
@@ -114,7 +114,7 @@ const Price = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='p-2' >
+                    <div className='p-2'  data-aos="fade-left">
                         <div className='shadow-lg rounded-xl py-10 px-4 space-y-3'>
                             <div className='flex flex-col items-center'>
                                 <h3 className='text-2xl font-bold'>Developer Plan</h3>
@@ -138,12 +138,12 @@ const Price = () => {
                 </div>
 
                 <div className='container mx-auto flex md:flex-row flex-col  px-8 gap-3 '>
-                    <div className='' >
+                    <div className='' data-aos="fade-right">
 
                         <h2 className='text-4xl '>Frequently Asked <span className='font-bold'>Questions</span></h2>
                         <p className='text-gray-600 fa-stack mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
                     </div>
-                    <div className='flex flex-col gap-3' >
+                    <div className='flex flex-col gap-3' data-aos="fade-left">
                         {faqData.map((faq, index) => (
                             <FAQItem key={index} count={faq.count} qustion={faq.qustion} answr={faq.answr} />
                         ))}

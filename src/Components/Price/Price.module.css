@@ -47,6 +47,11 @@
         bottom: 10px;
         right: 10%;
     }
+    .pric-item{
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.5s ease;
+    }
 }
 @media  (min-width:643px) and (max-width:1020px) {
     .title-services{
