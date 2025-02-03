@@ -1,4 +1,6 @@
-
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
 import About from './Components/About/About'
 import Home from './Components/Home/Home'
@@ -11,7 +13,6 @@ import Blog from './Components/Blog/Blog'
 import Contact from './Components/Contact/Contact'
 import NotFound from './Components/NotFound/NotFound'
 import Price from './Components/Price/Price'
-
 
 let router =createHashRouter([
   {path:'',element:<Layout/>, children:[

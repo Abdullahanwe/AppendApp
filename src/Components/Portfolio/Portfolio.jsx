@@ -28,15 +28,15 @@ const Portfolio = () => {
     ];
 
     const portfolioItems = [
-        { id: 1, category: 'all', img: imgS1 , Name:'product1'},
-        { id: 2, category: 'all', img: imgS6 ,Name:'product6'},
-        { id: 3, category: 'all', img: imgS2 , Name:'product2'},
-        { id: 4, category: 'all', img: imgS5 , Name:'product5'},
-        { id: 5, category: 'all', img: imgS8 ,Name:'product8' },
-        { id: 6, category: 'all', img: imgS3 , Name:'product3'},
-        { id: 7, category: 'all', img: imgS4 , Name:'product4'},
-        { id: 8, category: 'all', img: imgS7 , Name:'product7'},
-        { id: 9, category: 'all', img: imgS9 , Name:'product9'},
+        { id: 1, category: 'all', img: imgS1, Name: 'product1' },
+        { id: 2, category: 'all', img: imgS6, Name: 'product6' },
+        { id: 3, category: 'all', img: imgS2, Name: 'product2' },
+        { id: 4, category: 'all', img: imgS5, Name: 'product5' },
+        { id: 5, category: 'all', img: imgS8, Name: 'product8' },
+        { id: 6, category: 'all', img: imgS3, Name: 'product3' },
+        { id: 7, category: 'all', img: imgS4, Name: 'product4' },
+        { id: 8, category: 'all', img: imgS7, Name: 'product7' },
+        { id: 9, category: 'all', img: imgS9, Name: 'product9' },
     ];
 
     const brandIds = [1, 7, 8];
@@ -58,7 +58,7 @@ const Portfolio = () => {
                         <p className='text-gray-600 p-2'>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         <button className={`${Style['btn']}`}>Get Started</button>
                     </div>
-                    <div className={`${Style['static-img']} grid sm:grid-cols-1 sm:grid-rows-1 `}  data-aos="fade-left">
+                    <div className={`${Style['static-img']} grid sm:grid-cols-1 sm:grid-rows-1 `} data-aos="fade-left" >
                         <img src={img1} alt="img1" className={`${Style['static-back']} `} />
                         <img src={img2} alt="img2" className={`${Style['static-front']}`} />
                     </div>
@@ -68,8 +68,8 @@ const Portfolio = () => {
                 <div className={`${Style['static-im']} grid sm:grid-cols-1 sm:grid-rows-1 p-4 `} data-aos="fade-right">
                     <img src={img3} alt="img1" className={`${Style['img3']} `} />
                 </div>
-                <div className={`${Style['sm']} md:flex md:p-4`} data-aos="fade-left">
-                    <div className=" ">
+                <div className={`${Style['sm']} md:flex md:p-4`}>
+                    <div className=" " data-aos="fade-left">
                         <h3 className='text-2xl p-2 font-bold'>Sunt consequatur ad ut est nulla</h3>
                         <p className='text-gray-600 p-2'>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
                         <p className='text-gray-600 p-2 flex'>
@@ -86,7 +86,7 @@ const Portfolio = () => {
             </div>
             {/*  */}
             <div className="container mx-auto text-center py-10">
-            <div className="title text-center">
+                <div className="title text-center">
                     <h2 className={`${Style['title-services']} text-3xl font-bold font-sans`}>Portfolio</h2>
                     <p className='text-gray-500 p-5'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
                 </div>
@@ -105,7 +105,7 @@ const Portfolio = () => {
                 </ul>
 
                 <div className={` sm:columns-2  lg:columns-3 py-10 px-4 sm:py-20 gap-4 gap-y-3  ${activeTab !== 'all'} `}
-
+                    
                 >
                     {portfolioItems
                         .filter((item) => {
@@ -116,9 +116,9 @@ const Portfolio = () => {
                             return false;
                         })
                         .map((item) => (
-                            <div key={item.id} className={`bg-white  shadow-lg break-inside-avoid mb-4 relative rounded-lg ${Style['card-proto']} overflow-hidden`  } data-aos="fade-up"
+                            <div key={item.id} className={`bg-white  shadow-lg break-inside-avoid mb-4 relative rounded-lg ${Style['card-proto']} overflow-hidden`}
+                                data-aos="fade-up"
 
-                                
                             >
                                 <img
                                     src={item.img}

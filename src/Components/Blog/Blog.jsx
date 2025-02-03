@@ -9,6 +9,8 @@ import img3 from '../../img/testimonials-3 (1).jpg';
 import img4 from '../../img/testimonials-4 (1).jpg';
 import img5 from '../../img/testimonials-5 (1).jpg';
 import { RiStarSFill } from "react-icons/ri";
+import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteRight } from "react-icons/fa";
 import AspectRatio from '@mui/joy/AspectRatio';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
@@ -21,6 +23,7 @@ import blog3 from '../../img/blog-3.jpg';
 import blog4 from '../../img/blog-author.jpg';
 import blog5 from '../../img/blog-author-2.jpg';
 import blog6 from '../../img/blog-author-3.jpg';
+import { BiFontSize } from 'react-icons/bi';
 
 const Blog = () => {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -46,13 +49,13 @@ const Blog = () => {
                     </div>
                     <div className='flex flex-col md:flex-row py-10 '>
                         <div className='md:w-1/3 w-full flex px-2  md:flex-col'>
-                            <div  data-aos="fade-up">
+                            <div>
                                 <h2 className='text-3xl font-bold my-3'>Testimonials</h2>
                                 <p >Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 
                             </div>
                         </div>
-                        <div className='md:w-2/3 w-full h-auto px-8 bg-slate-100 rounded-lg shadow-lg ' data-aos="fade-down">
+                        <div className='md:w-2/3 w-full h-auto px-8 bg-slate-100 rounded-lg shadow-lg '>
                             <Slider {...settings}>
                                 <div className='p-4'>
                                     <div className='flex items-center'>

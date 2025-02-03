@@ -10,13 +10,13 @@ const FAQItem = ({ qustion, answr ,count}) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     return (<>
-            <div className=' border-2 p-2 rounded-lg shadow  '>
+            <div className=' border-2 p-2 rounded-lg shadow  ' data-aos="fade-left"> 
                 <div className='  '>
                     <button
                         onClick={() => setIsExpanded(!isExpanded)}
-                        className={`p-1 w-full flex justify-between items-center content-start ${ !isExpanded? " ": "text-red-700"} `}
+                        className={`ml-2 p-1 w-full flex justify-between items-center content-start ${ !isExpanded? " ": "text-red-700"} `}
                     >
-                    <p className={`${Style['pric-item']} `}> <span>{count}</span> {qustion}</p>
+                    <p className={`${Style['pric-item']}`}> <span>{count}</span> {qustion}</p>
                         {isExpanded ? <FaChevronDown /> : <FaChevronRight />}
                     </button>
                 </div>
@@ -92,7 +92,7 @@ const Price = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='p-3 scale-110 z-10 ' data-aos="fade-up">
+                    <div className='p-3 scale-110 z-10 'data-aos="fade-up" >
                         <div className='shadow-lg rounded-xl py-10  px-4 space-y-3  border-red-700 border-2'>
                             <div className='flex flex-col items-center'>
                                 <h3 className='text-2xl font-bold'>Business Plan</h3>
@@ -114,7 +114,7 @@ const Price = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='p-2'  data-aos="fade-left">
+                    <div className='p-2' data-aos="fade-left">
                         <div className='shadow-lg rounded-xl py-10 px-4 space-y-3'>
                             <div className='flex flex-col items-center'>
                                 <h3 className='text-2xl font-bold'>Developer Plan</h3>
@@ -138,12 +138,12 @@ const Price = () => {
                 </div>
 
                 <div className='container mx-auto flex md:flex-row flex-col  px-8 gap-3 '>
-                    <div className='' data-aos="fade-right">
+                    <div className='' data-aos="fade-right" >
 
                         <h2 className='text-4xl '>Frequently Asked <span className='font-bold'>Questions</span></h2>
                         <p className='text-gray-600 fa-stack mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
                     </div>
-                    <div className='flex flex-col gap-3' data-aos="fade-left">
+                    <div className='flex flex-col gap-3' >
                         {faqData.map((faq, index) => (
                             <FAQItem key={index} count={faq.count} qustion={faq.qustion} answr={faq.answr} />
                         ))}

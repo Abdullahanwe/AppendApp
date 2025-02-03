@@ -1,9 +1,9 @@
-
 import React, { useState, useEffect } from "react";
 import { FaAnglesUp } from "react-icons/fa6";
 
 const ScrollToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
+
 
     useEffect(() => {
         const toggleVisibility = () => {
@@ -17,6 +17,7 @@ const ScrollToTopButton = () => {
         window.addEventListener("scroll", toggleVisibility);
         return () => window.removeEventListener("scroll", toggleVisibility);
     }, []);
+
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -34,10 +35,10 @@ const ScrollToTopButton = () => {
                         position: "fixed",
                         bottom: "20px",
                         right: "20px",
-                        padding: "10px 10px",
+                        padding: "10px 15px",
                         fontSize: "16px",
                         backgroundColor: "#e84545",
-                        color: "white",
+                        color: "#fff",
                         border: "none",
                         borderRadius: "5px",
                         cursor: "pointer",

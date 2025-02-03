@@ -10,13 +10,12 @@ const Layout = () => {
     return (
         <>
             <Navbar />
-            <div className=" w-full overflow-hidden min-h-screen mx-auto jus justify-center justify-items-center flex flex-col">
+            <div className=" w-full min-h-screen overflow-hidden mx-auto jus justify-center justify-items-center flex flex-col">
                 <Outlet>
-                    <About />
-                    <Home />
+                    <About />   
+                    <Home/>
                 </Outlet>
-                <ScrollToTopButton />
-
+                <ScrollToTopButton/>
             </div>
 
             <Footer />
